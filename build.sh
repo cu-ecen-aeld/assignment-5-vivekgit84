@@ -1,7 +1,7 @@
 #!/bin/bash
 #Script to build buildroot configuration
 #Author: Siddhant Jajoo
-
+: << 'EOF'
 source shared.sh
 
 EXTERNAL_REL_BUILDROOT=../base_external
@@ -31,3 +31,4 @@ else
 	make -C buildroot BR2_EXTERNAL=${EXTERNAL_REL_BUILDROOT}
 
 fi
+EOF
