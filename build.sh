@@ -1,7 +1,7 @@
 #!/bin/bash
 #Script to build buildroot configuration
 #Author: Siddhant Jajoo
-: << 'EOF'
+
 source shared.sh
 
 EXTERNAL_REL_BUILDROOT=../base_external
@@ -30,5 +30,4 @@ else
 	echo "To force update, delete .config or make changes using make menuconfig and build again."
 	make -C buildroot BR2_EXTERNAL=${EXTERNAL_REL_BUILDROOT}
 
-fi
-EOF
+fis
